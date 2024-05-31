@@ -50,10 +50,10 @@ export function CreateModal({ closeModal }: ModalProps){
             <div className="modal-body">
                 <h2>Register a new Movie</h2>
                 <form className="input-container">
-                    <Input label="title" value={title} updateValue={setTitle}/>
-                    <Input label="release_year" value={release_year} updateValue={setReleaseYear}/>
-                    <Input label="description" value={description} updateValue={setDescription}/>
-                    <Input label="image" value={image} updateValue={setImage}/>
+                    <Input label="Title" value={title} updateValue={setTitle}/>
+                    <Input label="Release Year" value={release_year} updateValue={setReleaseYear}/>
+                    <Input label="Description" value={description} updateValue={setDescription}/>
+                    <Input label="Image" value={image} updateValue={setImage}/>
                 </form>
                 <button onClick={submit} className="btn-secondary">
                     {isLoading ? 'postando...' : 'postar'}
