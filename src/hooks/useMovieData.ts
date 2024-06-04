@@ -4,11 +4,11 @@ import { MovieData } from '../interface/MovieData';
 
 const baseURL = process.env.REACT_APP_API_BASE_URL;
 
-const API_URL = `${baseURL}/api/products`;
+const API_URL = `${baseURL}/movie`;
 //const API_URL = 'http://localhost:8080';
 
 const fetchData = async (): AxiosPromise<MovieData[]> => {
-    const response = axios.get(API_URL + '/movie');
+    const response = axios.get(API_URL);
     return response;
 }
 
